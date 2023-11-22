@@ -1,24 +1,26 @@
-let userInput014: unknown;
-let userName014: string;
+let userInput1: unknown;
+let userName1: string;
 
-userInput014 = 5;
-userInput014 = 'Max';
-// userName014 = userInput014; // 會出錯 // Type 'unknown' is not assignable to type 'string'.
+userInput1 = 5;
+userName1 = 'Max';
+// userName1 = userInput1; // 會出錯 // Type 'unknown' is not assignable to type 'string'.
 
 //////////////////////////////////
-let userInput014_2: any;
-let userName014_2: string;
+let userInput2: any;
+let userName2: string;
 
-userName014_2 = 'Max';
-userInput014_2 = userName014_2; // 正常
+userName2 = 'Max';
+userInput2 = userName1; // 正常
 
 //////////////////////////////////
 // unknown 還是必須做型別檢查
-let userInput014_3: unknown;
-let userName014_3: string;
+let userInput3: unknown;
+let userName3: string;
 
-userInput014_3 = 5;
-userInput014_3 = 'Max';
-if (typeof userInput014_3 === 'string') {
-  userName014_3 = userInput014_3; // 這樣才會正常
+userInput3 = 5;
+userInput3 = 'Max';
+if (typeof userInput3 === 'string') {
+  userName3 = userInput3; // 這樣才會正常
 }
+
+export {};

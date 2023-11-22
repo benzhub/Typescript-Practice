@@ -15,4 +15,16 @@
 // import './basic/015-The-never-Type';
 // import './basic/016-Arrow-Functions';
 // import './basic/017-Reset-Parameters';
-import './basic/018-Array-Object-Destructuring'
+// import './basic/018-Array-Object-Destructuring';
+
+// // Classes;
+// import './classes/019-Constructor-Function-Keywords';
+// import './classes/020-private-and-public-Access-Modifiers';
+// import './classes/021-Shorthand-Initialization';
+// import './classes/022-Readonly-Properties';
+// import './classes/023-Inheritance';
+// import './classes/024- Overriding-Properties-The-Protected-Modifiers';
+// import './classes/025-Getters-Setters';
+// import './classes/026-Static-Methods-Properties';
+// import './classes/027-Abstract-Classes';
+import './classes/028-Singletons-Private-Constructors';

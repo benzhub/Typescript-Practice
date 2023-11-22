@@ -1,7 +1,7 @@
 type Combinable = number | string;
 type ConversionDescriptor = 'as-number' | 'as-text';
 
-function combine010(
+function combine(
   input1: Combinable,
   input2: Combinable,
   resultConversion: ConversionDescriptor
@@ -17,33 +17,35 @@ function combine010(
   }
 }
 
-const combineAges010 = combine010(30, 26, 'as-number');
-console.log(combineAges010); // 56
+const combineAges = combine(30, 26, 'as-number');
+console.log(combineAges); // 56
 
-const combinedStringAges010 = combine010('100', '1', 'as-number');
-console.log(combinedStringAges010); // 101
-const combinedStringAges0102 = combine010('100', 1, 'as-number');
-console.log(combinedStringAges0102); // 101
-const combinedStringAges0103 = combine010(100, '1', 'as-number');
-console.log(combinedStringAges0103); // 101
+const combinedStringAges1 = combine('100', '1', 'as-number');
+console.log(combinedStringAges1); // 101
+const combinedStringAges2 = combine('100', 2, 'as-number');
+console.log(combinedStringAges2); // 102
+const combinedStringAges3 = combine(100, '3', 'as-number');
+console.log(combinedStringAges3); // 103
 
-const combineNames010 = combine010('Josh', 'Adam', 'as-text');
-console.log(combineNames010); // JoshAdam
+const combineNames = combine('Josh', 'Adam', 'as-text');
+console.log(combineNames); // JoshAdam
 
-const combineNumtoStr010 = combine010(5, 18, 'as-text');
-console.log(combineNumtoStr010); // 518
+const combineNumtoStr1 = combine(100, 1, 'as-text');
+console.log(combineNumtoStr1); // 101
 
-const combineNumtoStr0102 = combine010(5, '18', 'as-text');
-console.log(combineNumtoStr0102); // 518
+const combineNumtoStr2 = combine(100, '2', 'as-text');
+console.log(combineNumtoStr2); // 102
 
-const combineNumtoStr0103 = combine010('5', 18, 'as-text');
-console.log(combineNumtoStr0103); // 518
+const combineNumtoStr3 = combine('100', 3, 'as-text');
+console.log(combineNumtoStr3); // 103
 
-const combineStrtoNum010 = combine010('Josh', 'Adam', 'as-number');
-console.log(combineStrtoNum010); // Uncaught Error: Your input counld not convert to Number
+// const combineStrtoNum1 = combine('Josh', 'Adam', 'as-number');
+// console.log(combineStrtoNum1); // Uncaught Error: Your input counld not convert to Number
 
-const combineStrtoNum0102 = combine010(123, 'Adam', 'as-number');
-console.log(combineStrtoNum0102); // Uncaught Error: Your input counld not convert to Number
+// const combineStrtoNum2 = combine(123, 'Adam', 'as-number');
+// console.log(combineStrtoNum2); // Uncaught Error: Your input counld not convert to Number
 
-const combineStrtoNum0103 = combine010('Josh', 456, 'as-number');
-console.log(combineStrtoNum0103); // Uncaught Error: Your input counld not convert to Number
+// const combineStrtoNum3 = combine('Josh', 456, 'as-number');
+// console.log(combineStrtoNum3); // Uncaught Error: Your input counld not convert to Number
+
+export {};

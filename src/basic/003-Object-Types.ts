@@ -1,4 +1,4 @@
-const Person003: {
+const person: {
   name: string;
   age: number;
 } = {
@@ -6,4 +6,5 @@ const Person003: {
   age: 30,
 };
 
-console.log(Person003.name); // Ben
+console.log(person.name); // Ben
+export {};

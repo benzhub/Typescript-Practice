@@ -1,4 +1,4 @@
-const sum017 = (...numbers: number[]): number => {
+const sum = (...numbers: number[]): number => {
   // solution: 1
   return numbers.reduce((acc, cur) => {
       return acc + cur;
@@ -24,5 +24,7 @@ const sum017 = (...numbers: number[]): number => {
 //   return result;
 };
 
-const numSum017 = sum017(5, 10, 2, 3.7);
-console.log(numSum017); // 20.7
+const numSum = sum(5, 10, 2, 3.7);
+console.log(numSum); // 20.7
+
+export {};

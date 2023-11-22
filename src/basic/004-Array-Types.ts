@@ -1,4 +1,4 @@
-const Person004: {
+const person: {
   name: string;
   age: number;
   hobbies: string[];
@@ -10,11 +10,13 @@ const Person004: {
 
 let favoriteActivities: string[];
 // favoriteActivities = ['Sports', 1]; // 會出錯，陣列(Array)裡面必須都是string
+favoriteActivities = ['Sports', '1'];
 
-console.log(Person004.name); // "Ben"
+console.log(person.name); // "Ben"
 
-for (const hobby of Person004.hobbies) {
+for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
 }
 // "SPORTS"
 // "COOKING"
+export {};
