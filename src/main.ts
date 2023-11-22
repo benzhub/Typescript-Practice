@@ -27,4 +27,20 @@
 // import './classes/025-Getters-Setters';
 // import './classes/026-Static-Methods-Properties';
 // import './classes/027-Abstract-Classes';
-import './classes/028-Singletons-Private-Constructors';
+// import './classes/028-Singletons-Private-Constructors';
+
+// Interfaces;
+// import './interface/029-First-Interface';
+// import './interface/030-Using-Interface-with-Classes';
+// import './interface/031-Readonly-Interfaces-Properties';
+// import './interface/032-Extending-Interfaces';
+// import './interface/033-Interface-as-Function-Types';
+// import './interface/034-optional-parameters-properties';
+// import './interface/035-intersection-Types';
+// import './interface/036-More-on-Type-Guards';
+// import './interface/037-Discriminated-Unions';
+// import './interface/038-Type-Casting';
+// import './interface/039-Index-Properties';
+// import './interface/040-Function-Overloads';
+// import './interface/041-Optional-Chaining';
+import './interface/042-Nullish-Coalescing';
