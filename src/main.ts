@@ -43,4 +43,14 @@
 // import './interface/039-Index-Properties';
 // import './interface/040-Function-Overloads';
 // import './interface/041-Optional-Chaining';
-import './interface/042-Nullish-Coalescing';
+// import './interface/042-Nullish-Coalescing';
+
+// Generics
+// import './generic/043-Example-Generics';
+// import './generic/044-Generic-Function';
+// import './generic/045-Working-with-Constraints';
+// import './generic/046-Another-Generic-Function';
+// import './generic/047-The-keyof-Constraint';
+// import './generic/048-Generic-Classes';
+// import './generic/049-Generic-Utility-Types';
+import './generic/050-Generic-Types-VS-Union-Types';
