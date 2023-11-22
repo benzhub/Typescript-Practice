@@ -1,6 +1,6 @@
 function add002(n1: number, n2: number, showResult: boolean, phrase: string) {
-  if(typeof n1 !== 'number' || typeof n2 !== 'number'){
-      throw new Error('Incorrect input!')
+  if (typeof n1 !== 'number' || typeof n2 !== 'number') {
+    throw new Error('Incorrect input!');
   }
 
   const result = n1 + n2;

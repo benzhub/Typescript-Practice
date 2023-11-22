@@ -1,15 +1,20 @@
 type Combinable = number | string;
-type ConversionDescriptor = "as-number" | "as-text";
+type ConversionDescriptor = 'as-number' | 'as-text';
 
-function combine010(input1: Combinable, input2: Combinable, resultConversion: ConversionDescriptor)  {
-    let result;
-    if (resultConversion === 'as-number') {
-      result =  +input1 + +input2;
-      if(Number.isNaN(result)) throw new Error("String counld not convert to Number")
-      return result;
-    } else {
-      return input1.toString() + input2.toString();
-    }
+function combine010(
+  input1: Combinable,
+  input2: Combinable,
+  resultConversion: ConversionDescriptor
+) {
+  let result;
+  if (resultConversion === 'as-number') {
+    result = +input1 + +input2;
+    if (Number.isNaN(result))
+      throw new Error('String counld not convert to Number');
+    return result;
+  } else {
+    return input1.toString() + input2.toString();
+  }
 }
 
 const combineAges010 = combine010(30, 26, 'as-number');

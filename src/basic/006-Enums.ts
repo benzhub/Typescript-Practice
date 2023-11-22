@@ -4,7 +4,7 @@ enum Role {
   AUTHOR = 'AUTHOR',
 }
 
-const person006: {
+const Person006: {
   name: string;
   age: number;
   hobbies: string[];
@@ -16,15 +16,15 @@ const person006: {
   role: Role.AUTHOR,
 };
 
-// person006.role.push('admin'); // 會出錯，物件中的role必須是枚舉Role中的，且非Array不能push
-// person006.role[1] = 10; // 會出錯，物件中的role必須是枚舉Role中的
+// Person006.role.push('admin'); // 會出錯，物件中的role必須是枚舉Role中的，且非Array不能push
+// Person006.role[1] = 10; // 會出錯，物件中的role必須是枚舉Role中的
 
 let favoriteActivities4: string[];
 // favoriteActivities4 = ['Sports', 1]; // 會出錯，陣列裡面必須都是string
 
-console.log(person006.name); // Ben
+console.log(Person006.name); // Ben
 
-for (const hobby of person006.hobbies) {
+for (const hobby of Person006.hobbies) {
   console.log(hobby.toUpperCase());
 }
 // Sports

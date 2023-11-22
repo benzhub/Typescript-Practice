@@ -5,8 +5,9 @@ function combine009(
 ) {
   let result;
   if (resultConversion === 'as-number') {
-    result =  +input1 + +input2;
-    if(Number.isNaN(result)) throw new Error("String counld not convert to Number")
+    result = +input1 + +input2;
+    if (Number.isNaN(result))
+      throw new Error('String counld not convert to Number');
     return result;
   } else {
     return input1.toString() + input2.toString();
