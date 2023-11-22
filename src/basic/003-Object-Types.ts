@@ -1,4 +1,4 @@
-const person: {
+const person003: {
   name: string;
   age: number;
 } = {
@@ -6,4 +6,4 @@ const person: {
   age: 30,
 };
 
-console.log(person.name); // Ben
+console.log(person003.name); // Ben

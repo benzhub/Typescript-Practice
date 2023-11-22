@@ -1,4 +1,4 @@
-function combine002(
+function combine009(
   input1: number | string,
   input2: number | string,
   resultConversion: 'as-number' | 'as-text'
@@ -13,29 +13,29 @@ function combine002(
   }
 }
 
-const combineAges002 = combine002(30, 26, 'as-number');
-console.log(combineAges002); // 56
+const combineAges009 = combine009(30, 26, 'as-number');
+console.log(combineAges009); // 56
 
-const combinedStringAges002 = combine002('30', '28', 'as-number');
-console.log(combinedStringAges002); // 58
+const combinedStringAges009 = combine009('30', '28', 'as-number');
+console.log(combinedStringAges009); // 58
 
-const combineNames002 = combine002('Josh', 'Adam', 'as-text');
-console.log(combineNames002); // JoshAdam
+const combineNames009 = combine009('Josh', 'Adam', 'as-text');
+console.log(combineNames009); // JoshAdam
 
-const combineNumtoStr0021 = combine002(5, 18, 'as-text');
-console.log(combineNumtoStr0021); // 518
+const combineNumtoStr009 = combine009(5, 18, 'as-text');
+console.log(combineNumtoStr009); // 518
 
-const combineNumtoStr0022 = combine002(5, '18', 'as-text');
-console.log(combineNumtoStr0022); // 518
+const combineNumtoStr0092 = combine009(5, '18', 'as-text');
+console.log(combineNumtoStr0092); // 518
 
-const combineNumtoStr0023 = combine002('5', 18, 'as-text');
-console.log(combineNumtoStr0023); // 518
+const combineNumtoStr0093 = combine009('5', 18, 'as-text');
+console.log(combineNumtoStr0093); // 518
 
-const combineStrtoNum0021 = combine002('Josh', 'Adam', 'as-number');
-console.log(combineStrtoNum0021); // Uncaught Error: Your input counld not convert to Number
+const combineStrtoNum009 = combine009('Josh', 'Adam', 'as-number');
+console.log(combineStrtoNum009); // Uncaught Error: Your input counld not convert to Number
 
-const combineStrtoNum0022 = combine002(123, 'Adam', 'as-number');
-console.log(combineStrtoNum0022); // Uncaught Error: Your input counld not convert to Number
+const combineStrtoNum0092 = combine009(123, 'Adam', 'as-number');
+console.log(combineStrtoNum0092); // Uncaught Error: Your input counld not convert to Number
 
-const combineStrtoNum0023 = combine002('Josh', 456, 'as-number');
-console.log(combineStrtoNum0023); // Uncaught Error: Your input counld not convert to Number
+const combineStrtoNum0093 = combine009('Josh', 456, 'as-number');
+console.log(combineStrtoNum0093); // Uncaught Error: Your input counld not convert to Number
