@@ -1,19 +1,19 @@
 enum Role {
-    ADMIN = 'ADMIN',
-    READ_ONLY = 100,
-    AUTHOR = 'AUTHOR'
-};
+  ADMIN = 'ADMIN',
+  READ_ONLY = 100,
+  AUTHOR = 'AUTHOR',
+}
 
 const person4: {
-    name: string;
-    age: number;
-    hobbies: string[];
-    role: Role
+  name: string;
+  age: number;
+  hobbies: string[];
+  role: Role;
 } = {
-    name: 'Ben',
-    age: 30,
-    hobbies: ['Sports', 'Cooking'],
-    role: Role.AUTHOR,
+  name: 'Ben',
+  age: 30,
+  hobbies: ['Sports', 'Cooking'],
+  role: Role.AUTHOR,
 };
 
 // person4.role.push('admin'); // 會出錯，物件中的role必須是枚舉Role中的，且非Array不能push
@@ -24,8 +24,8 @@ let favoriteActivities4: string[];
 
 console.log(person4.name); // Ben
 
-for(const hobby of person4.hobbies){
-    console.log(hobby.toUpperCase())
+for (const hobby of person4.hobbies) {
+  console.log(hobby.toUpperCase());
 }
 // Sports
 // Cooking
